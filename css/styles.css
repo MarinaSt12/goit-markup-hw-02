@@ -18,7 +18,7 @@ body {
 
 /* header */
 
-/* .header {
+/* .page-header {
   text-decoration: none;
 } */
 
@@ -48,4 +48,39 @@ body {
 .contacts-link:hover, 
 .contacts-link:focus {
   color: #2196F3;
+}
+
+/* hero */
+
+.hero-section {
+  background-color: #2F303A;
+}
+
+.title-1 {
+  font-size: 44px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.auth-button {
+  font-size: 16px;
+  background-color: #2196F3;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.nav-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  background-color: #F5F4FA;
+  color: #212121;
+  cursor: pointer;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.nav-button:hover,
+.nav-button:focus {
+  background-color: #2196F3;
+  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
 }
