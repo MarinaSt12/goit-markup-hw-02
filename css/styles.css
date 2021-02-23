@@ -1,8 +1,51 @@
-* {
+/* * {
   padding: 0;
   margin: 0;
-}
+} */
 
 body {
   background-color: #ffffff;
+  font-family: Roboto, Raleway;
+  font-size: 14px;
+  line-height: ;
+  color: #757575;
+}
+
+/* основной цвет 757575 серый*/
+/* второстепенный цвет 212121 темно-серый */
+/* второстепенный цвет 000000 черный */
+/* второстепенный цвет 2196F3 голубой*/
+
+/* header */
+
+/* .header {
+  text-decoration: none;
+} */
+
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.logo-item {
+  color: #2196F3;
+}
+
+.site-nav .link{
+  color: #212121;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: #2196F3;
+}
+
+.contacts-link {
+  color: #757575;
+}
+
+.contacts-link:hover, 
+.contacts-link:focus {
+  color: #2196F3;
 }
