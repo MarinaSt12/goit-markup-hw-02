@@ -1,209 +1,184 @@
-/* * {
-  padding: 0;
-  margin: 0;
-} */
+:root {
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+  --accent-color: #2196F3;
+  --text-color-darkgrey: #212121;
+  --text-color-grey: #757575;
+  --text-color-black: #000000;
+  --text-color-white: #ffffff;
+  --background-main: #E5E5E5;
+  --background-color-dark: #2F303A;
+  --background-color-light: #F5F4FA;
+  
 
-body {
-  /* text-decoration: none; */
-  background-color: #ffffff;
-  font-family: Roboto, Raleway;
-  font-size: 14px;
-  color: #757575;
+
 }
 
-body a {
+body {
+  font-family: var(--main-font);
+}
+
+/* маркеры */
+.list {
+  list-style: none;
+}
+
+/* подчеркивание */
+.link {
   text-decoration: none;
 }
 
-/* header */
-.page-header li {
-  display: inline-block; 
-}
-  /* position: absolute;
-  width: 1600px;
-  height: 80px;
-  left: 0px;
-  top: 0px; */
 
+/* ============ COMPONENTS ============ */
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color-darkgrey);
+}
 
 .logo {
-  font-size: 26px;
   font-weight: 700;
-  color: #000000;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
 }
 
-.logo-item {
-  color: #2196f3;
+/* ============ HEADER ============ */
+.navigation-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-color-darkgrey);
+}
+ 
+.navigation-link:hover,
+.navigation-link:focus {
+  color: var(--accent-color);
 }
 
-.navigation .nav-link {
-  color: #212121;
+.contacts-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-color-grey);
 }
 
-.navigation .nav-link:hover,
-.navigation .nav-link:focus {
-  color: #2196f3;
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--accent-color);
 }
 
-.contact-link {
-  color: #757575;
+.logo-light-theme {
+  color: var(--text-color-black);
 }
 
-.contact-link:hover,
-.contact-link:focus {
-  color: #2196f3;
-}
 
-/* hero */
-
-.hero-section {
-  background-color: #2f303a;
-  /* position: absolute;
+/* ============ HERO ============ */
+.hero {
   width: 1600px;
   height: 600px;
   left: 0px;
-  top: 97px; */
+  top: 97px;
+  background-color: var(--background-color-dark);
 }
 
-.main-title {
-/* position: absolute;
-width: 696px;
-height: 120px;
-left: 452px;
-top: 297px; */
-font-family: Roboto;
-font-style: normal;
-font-weight: 900;
-font-size: 44px;
-line-height: 60px;
-text-align: center;
-letter-spacing: 0.06em;
-text-transform: uppercase;
-color: #FFFFFF;
+.hero-title {
+  position: absolute;
+  width: 696px;
+  height: 120px;
+  left: 452px;
+  top: 297px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--text-color-white);
 }
 
-.auth-button {
-  font-family: Roboto;
-  font-style: normal;
+.modal-btn {
+  font-family: inherit;
   font-size: 16px;
   font-weight: 700;
-  line-height: 30px;
-  background-color: #2196f3;
-  color: #ffffff;
-  cursor: pointer;
-  /* position: absolute;
+  line-height: 1.88;
+  position: absolute;
   width: 200px;
   height: 50px;
   left: 700px;
-  top: 447px; */
-}
-/* text for button
-position: absolute;
-width: 136px;
-height: 30px;
-left: 732px;
-top: 457px;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.06em; */
-
-/* .nav-button {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-  background-color: #f5f4fa;
-  color: #212121;
-  cursor: pointer;
+  top: 447px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-} */
-
-.nav-button:hover,
-.nav-button:focus {
-  background-color: #2196f3;
-  color: #ffffff;
-  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+  cursor: pointer;
+  color: var(--text-color-white);
+  background-color: var(--accent-color);
 }
+/* ============ END HERO ============ */
 
- /* advantages */
-.advantages {
-  font-size: 14px;
-  line-height: 16px;
+
+/* ============ ADVANTAGES ============ */
+.advantages-title {
   font-weight: 700;
-  color: #212121;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-align: left;
+  color: var(--text-color-darkgrey);
 }
 
 .advantages-description {
+  font-weight: 500;
   font-size: 14px;
-  line-height: 24px;
-  font-weight: 400;
-  text-align: left;
-}
-
-/* services */
-.services-title {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 42px;
-  text-align: center;
+  line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--text-color-grey);
+}
+/* ============ END ADVANTAGES ============ */
+
+
+/* ============ SERVICES ============ */
+
+/* ============ END SERVICES ============ */
+
+
+/* ============ TEAM ============ */
+.team {
+  background-color: var(--background-color-light);
+}
+/* ============ END TEAM ============ */
+
+
+/* ============ FOOTER ============ */
+.footer-info {
+background-color: var(--background-color-dark);
 }
 
-/* team */
-.team-title {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
+.logo-dark-theme {
+  color: var(--text-color-white);
 }
 
-.specialist-name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0.03em;
-  color: #212121;
-}
-
-.specialist-position {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0.03em;
-}
-
-/* footer */
-.page-footer {
-  background-color: #2f303a;
+.address {
   font-style: normal;
 }
 
-.logo-footer {
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 31px;
-  color: #ffffff;
-}
-
-/* .contacts-footer {
-  убрать маркеры
-} */
-
-.post-address {
+.info-address-link {
   font-size: 14px;
-  line-height: 24px;
+  font-weight: 400;
+  line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  color: var(--text-color-white);
 }
- 
-.footer-link {
+
+.info-list-link {
   font-size: 14px;
+  font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+/* ============ END FOOTER ============ */
