@@ -16,6 +16,7 @@
 
 body {
   font-family: var(--main-font);
+  color: var(--text-color-grey);
 }
 
 /* маркеры */
@@ -115,6 +116,7 @@ body {
   top: 447px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   cursor: pointer;
+  border-radius: 4px;
   color: var(--text-color-white);
   background-color: var(--accent-color);
 }
@@ -136,7 +138,6 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--text-color-grey);
 }
 /* ============ END ADVANTAGES ============ */
 
@@ -149,6 +150,20 @@ body {
 /* ============ TEAM ============ */
 .team {
   background-color: var(--background-color-light);
+}
+
+.specialist-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--text-color-darkgrey);
+}
+
+.specialist-position {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 /* ============ END TEAM ============ */
 
