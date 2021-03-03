@@ -34,6 +34,7 @@ body {
 /* ============ COMPONENTS ============ */
 .section-title {
   font-weight: 700;
+  /* font-style: normal; */
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -42,7 +43,7 @@ body {
 }
 
 .logo {
-  font-style: var(--secondary-font);
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19em;
